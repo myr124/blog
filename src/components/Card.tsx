@@ -5,9 +5,9 @@ interface Props {
 
 const Card = ({ title, desc }: Props) => {
   return (
-    <div className="card text-white bg-dark mb-3 max-w-xs">
+    <div>
       <div className="card-body">
-        <h5 className="card-title">{title}</h5>
+        <h1 className="card-title">{title}</h1>
         <p className="card-text">{desc}</p>
       </div>
     </div>
