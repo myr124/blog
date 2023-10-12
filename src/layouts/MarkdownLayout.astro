@@ -1,5 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
+import Navbar from "../components/Navbar";
 ---
 
 <!doctype html>
@@ -12,27 +13,34 @@ const { frontmatter } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter.title}</title>
   </head>
+  <Navbar />
+  <h1>{frontmatter.title}</h1>
+  <img src={frontmatter.image.url} />
   <body>
-    <h1>{frontmatter.title}</h1>
     <slot />
   </body>
+
+  <style is:global>
+    html {
+      font-family: system-ui, sans-serif;
+      background: #0f121a;
+      background-size: 224px;
+      color: white;
+    }
+    code {
+      font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+    }
+    body {
+      text-align: center;
+    }
+  </style>
+
 </html>
-<style is:global>
-  html {
-    font-family: system-ui, sans-serif;
-    background: #0f121a;
-    background-size: 224px;
-    color: white;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
-</style>

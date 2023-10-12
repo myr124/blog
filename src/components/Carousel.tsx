@@ -4,7 +4,7 @@ const Carousel = () => {
   return (
     <div className="flex justify-evenly border border-bodcol m-3">
       <div className="flex-none">
-        <Card title="test" desc="test" />
+        <Card title="test" desc="test" img="" />
       </div>
       <div className="flex-none">test</div>
       <div className="flex-none">
