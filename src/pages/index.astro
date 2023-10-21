@@ -8,7 +8,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
 
 <Layout title="Home">
   <Navbar />
-  <div class="grid grid-rows-1">
+  <div>
     {
       posts
         .slice(0, 1)
@@ -16,6 +16,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
           <Panorama
             img={post.frontmatter.image.url}
             link={"/posts/" + post.frontmatter.slug}
+            title={post.frontmatter.title}
           />
         ))
     }
@@ -23,7 +24,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
   <h2>Newest Posts</h2>
   <div class="grid grid-cols-3">
     {
-      posts.slice(0, 3).map((post) => (
+      posts.slice(1, 4).map((post) => (
         <a href={"/posts/" + post.frontmatter.slug}>
           <Card
             title={post.frontmatter.title}

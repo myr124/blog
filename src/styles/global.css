@@ -10,4 +10,28 @@
   h2 {
     @apply text-lg;
   }
+  p{
+    @apply py-2
+  }
+}
+p{
+  font-family: "monospace";
+  font-size: 20px
+}
+html {
+  background-color:  #3C3836;
+  color: white;
+  font-family: monospace;
+}
+
+code {
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace;
 }
