@@ -1,8 +1,7 @@
 ---
 const { frontmatter } = Astro.props;
 import Navbar from "../components/Navbar";
-import '../styles/global.css'
-
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -17,18 +16,15 @@ import '../styles/global.css'
     <slot />
   </div>
 
+  <style is:global>
+    html {
+      background-color: #0f121a;
+      color: white;
+    }
+
+    .Post {
+      margin: 40px;
+    }
+  </style>
 
 </html>
-
-<style is:global>
-  html{
-    background-color:#0f121a;
-    color:white
-  }
-
-  .Post{
-    margin: 40px
-  }
-
-
-</style>

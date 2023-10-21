@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  h1{
+    @apply text-xl;
+  }
+  
   h2 {
-    @apply text-2xl;
+    @apply text-lg;
   }
 }

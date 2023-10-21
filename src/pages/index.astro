@@ -1,13 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
-import Carousel from "../components/Carousel";
 import Panorama from "../components/Panorama";
+import Card from "../components/Card";
+const posts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Layout title="Home">
-  <div class="grid grid-rows-3">
-    <Navbar />
-    <Panorama />
+  <Navbar />
+  <div class="grid grid-rows-2">
+    {
+      posts
+        .slice(0, 1)
+        .map((post) => (
+          <Panorama
+            img={post.frontmatter.image.url}
+            link={"/posts/" + post.frontmatter.slug}
+          />
+        ))
+    }
+    <div class="grid grid-cols-3">
+      {
+        posts.slice(0, 3).map((post) => (
+          <a href={"/posts/" + post.frontmatter.slug}>
+            <Card
+              title={post.frontmatter.title}
+              desc={post.frontmatter.description}
+              img={post.frontmatter.image.url}
+              date={post.frontmatter.pubDate}
+            />
+          </a>
+        ))
+      }
+    </div>
   </div>
 </Layout>
