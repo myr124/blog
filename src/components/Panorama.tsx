@@ -5,11 +5,11 @@ interface Props {
 
 const Panorama = ({ img, link }: Props) => {
   return (
-    <a href={link}>
-      <div className="border border-bodcol m-3">
-        <img src={img} alt="Panorama" />
-      </div>
-    </a>
+    <div className=" m-3 flex justify-center content-center rounded">
+      <a href={link}>
+        <img src={img} alt="Panorama" className="border border-bodcol" />
+      </a>
+    </div>
   );
 };
 

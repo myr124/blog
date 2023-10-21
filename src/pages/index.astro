@@ -8,7 +8,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
 
 <Layout title="Home">
   <Navbar />
-  <div class="grid grid-rows-2">
+  <div class="grid grid-rows-1">
     {
       posts
         .slice(0, 1)
@@ -19,19 +19,20 @@ const posts = await Astro.glob("../pages/posts/*.md");
           />
         ))
     }
-    <div class="grid grid-cols-3">
-      {
-        posts.slice(0, 3).map((post) => (
-          <a href={"/posts/" + post.frontmatter.slug}>
-            <Card
-              title={post.frontmatter.title}
-              desc={post.frontmatter.description}
-              img={post.frontmatter.image.url}
-              date={post.frontmatter.pubDate}
-            />
-          </a>
-        ))
-      }
-    </div>
+  </div>
+  <h2>Newest Posts</h2>
+  <div class="grid grid-cols-3">
+    {
+      posts.slice(0, 3).map((post) => (
+        <a href={"/posts/" + post.frontmatter.slug}>
+          <Card
+            title={post.frontmatter.title}
+            desc={post.frontmatter.description}
+            img={post.frontmatter.image.url}
+            date={post.frontmatter.pubDate}
+          />
+        </a>
+      ))
+    }
   </div>
 </Layout>
