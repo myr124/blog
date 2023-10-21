@@ -8,7 +8,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
 
 <Layout title="Home">
   <Navbar />
-  <div>
+  <div class="fade-in-image transition-all ease-in">
     {
       posts
         .slice(0, 1)

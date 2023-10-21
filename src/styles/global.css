@@ -35,3 +35,21 @@ code {
     Courier New,
     monospace;
 }
+
+.fade-in-image{
+  animation: fadeIn 2s;
+}
+
+.fade-in-card{
+  animation: fadeInC 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInC {
+  0% { opacity: 0; }
+  100% { opacity: 0.7; }
+}
