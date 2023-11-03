@@ -6,14 +6,14 @@ pubDate: 11-2-23
 description: "My first experience building a mechanical keyboard"
 author: "Eric George"
 image:
-  url: "/src/pages/images/myfirstpost.jpg"
+  url: "src/pages/images/myfirstpost.jpg"
   alt: "The full Astro logo."
 tags: ["tech", "keyboards"]
 ---
 
 _Lorem_ ipsum dolor sit amet, consectetur adipiscing elit. Duis varius porta semper. In facilisis et massa id efficitur. Nam sagittis vel velit non maximus. Phasellus suscipit nisl nisl, at porttitor augue tristique sit amet. Integer ullamcorper consectetur nunc, vehicula interdum ipsum tincidunt vitae. Ut id sapien ac magna interdum aliquet sed non tortor. Suspendisse convallis neque sem, tristique sagittis eros accumsan non. Nullam porttitor et risus nec sagittis. Nullam tristique nisi eget tempor sagittis. Quisque imperdiet nunc quam, sed feugiat arcu tincidunt non. Praesent posuere massa vel massa feugiat sagittis. Sed finibus libero a tellus mollis dignissim. Duis rutrum, turpis vitae ullamcorper ultricies, purus mauris viverra metus, et venenatis nunc arcu sit amet libero. Donec commodo eros libero, lobortis placerat orci sodales vulputate. In pellentesque augue ut libero dignissim, ac maximus justo faucibus.
 
-Cras a elit eget nisi ultrices fermentum at eu tellus. Aliquam erat volutpat. Nullam quis tincidunt eros, pellentesque convallis metus. Donec non magna vitae orci porttitor eleifend. Vivamus nulla tellus, condimentum vitae quam ut, rutrum auctor arcu. Maecenas in convallis mi.   Nam sed feugiat sapien.
+Cras a elit eget nisi ultrices fermentum at eu tellus. Aliquam erat volutpat. Nullam quis tincidunt eros, pellentesque convallis metus. Donec non magna vitae orci porttitor eleifend. Vivamus nulla tellus, condimentum vitae quam ut, rutrum auctor arcu. Maecenas in convallis mi. Nam sed feugiat sapien.
 
 Morbi sed mollis arcu, quis ornare justo. Pellentesque vel purus nibh. Nulla facilisi. Ut elementum placerat quam, sit amet varius metus. Nullam hendrerit arcu ac velit iaculis pretium. Phasellus a magna sagittis, tincidunt orci sit amet, tincidunt nulla. Sed risus risus, imperdiet eu dignissim ac, feugiat et nisi. Nam libero leo, rutrum sed porta vel, dapibus ac orci. Nullam sit amet dui vulputate, pulvinar quam ac, sollicitudin massa. Aenean sagittis consequat velit nec elementum. Proin id ornare magna.
 
