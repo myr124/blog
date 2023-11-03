@@ -1,3 +1,3 @@
 # Blog
 
-Frontend Code for blog
+Actual private repo for blog
