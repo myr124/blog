@@ -2,10 +2,14 @@ import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
-  site:'https://myr124.github.io',
+  site: 'https://myr124.github.io',
   integrations: [react(), tailwind({
-    applyBaseStyles:false
-  })]
+    applyBaseStyles: false
+  })],
+  output: "server",
+  adapter: cloudflare()
 });
