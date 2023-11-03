@@ -6,7 +6,7 @@ pubDate: 11-2-23
 description: "A surprisingly fun and educative experience"
 author: "Eric George"
 image:
-  url: "/src/pages/images/myfirstpost.jpg"
+  url: "/public/images/myfirstpost.jpg"
   alt: "The full Astro logo."
 tags: ["tech", "programming", "compsci"]
 ---
