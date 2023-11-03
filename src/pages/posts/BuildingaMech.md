@@ -6,7 +6,7 @@ pubDate: 11-2-23
 description: "My first experience building a mechanical keyboard"
 author: "Eric George"
 image:
-  url: "src/pages/images/myfirstpost.jpg"
+  url: "/images/myfirstpost.jpg"
   alt: "The full Astro logo."
 tags: ["tech", "keyboards"]
 ---
