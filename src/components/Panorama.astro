@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+const { img, link } = Astro.props;
+---
+
+<div class="flex flex-row m-4 p-2 justify-center content-center">
+  <div class="image">
+    <a href={link}>
+      <Image
+        src={img}
+        width="1024"
+        height="500"
+        alt="Panorama"
+        class="border border-bodcol"
+      />
+    </a>
+  </div>
+</div>

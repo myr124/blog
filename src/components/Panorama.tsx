@@ -1,10 +1,9 @@
 interface Props {
   img: string;
   link: string;
-  title: string;
 }
 
-const Panorama = ({ img, link, title }: Props) => {
+const Panorama = ({ img, link }: Props) => {
   return (
     <div className="flex flex-row  m-4 p-2 justify-center content-center">
       <div className="image ">
