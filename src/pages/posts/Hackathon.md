@@ -6,7 +6,7 @@ pubDate: 11-2-23
 description: "A surprisingly fun and educative experience"
 author: "Eric George"
 image:
-  url: /blog/images/myfirstpost.jpg
+  url: /blog/images/hackathon.jpg
   alt: "The full Astro logo."
 tags: ["tech", "programming", "compsci"]
 ---
