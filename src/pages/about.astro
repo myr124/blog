@@ -1,8 +1,42 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
+import Card from "src/components/Card.astro";
 ---
 
 <Layout title="About">
   <Navbar />
+  <div class="about flex items-center p-5 flex-col">
+    <h1>About Me</h1>
+    <p class="px-60 py-4">
+      Hello my name is Eric and I am currently a freshman at UCF studying
+      computer science. I have been building things ever since I was a teeny
+      tiny kid and I believe thats why I love programming, because it lets me
+      build cool projects and solutions to problems that I have in real life. I
+      built this blog to improve my skills in web development and to document my
+      coding journey.
+    </p>
+    <h1>Portfolio</h1>
+    <p class="px-60 pt-4">Here are some cool projects I built:</p>
+  </div>
+  <div class="flex flex-col px-10 pd-10">
+    <Card
+      title="Rogue Knight"
+      desc="Developed a immersive roguelike video game, showcasing expertise in procedural level generation and a diverse range of power-ups. The game, crafted with the powerful Godot engine, boasts visually striking art assets created using a custom-built Stable Diffusion instance. The implementation of the random walker algorithm seamlessly integrates procedural level generation, offering players a dynamic and challenging experience. Successfully showcased at Knighthacks 2023, where the game earned acclaim from judges for its entertainment value and engaging gameplay.Developed a immersive roguelike video game, showcasing expertise in procedural level generation and a diverse range of power-ups. The game, crafted with the powerful Godot engine, boasts visually striking art assets created using a custom-built Stable Diffusion instance. The implementation of the random walker algorithm seamlessly integrates procedural level generation, offering players a dynamic and challenging experience. Successfully showcased at Knighthacks 2023, where the game earned acclaim from judges for its entertainment value and engaging gameplay."
+      img="/blog/images/rogueknight.png"
+      date="test"
+    />
+    <Card
+      title="FPL Predictor"
+      desc="A prediction app for Fantasy Premier League that was built using Next.js, React and Typescript. The website provides player information, a ruleset and a dream team page that uses weighted formulas and algorithms to create a team that will generate the most amount of points in a given gameweek"
+      img="/blog/images/buildingamech.jpg"
+      date="test"
+    />
+    <Card
+      title="Sumo bot"
+      desc="Designed and constructed an innovative robot capable of engaging in Sumo-style competition by strategically pushing objects and other robots off a circular perimeter. The robot, powered by an Arduino Uno, featured a robust 3D-printed chassis and precise DC motors for agile movement. Its intelligent navigation relied on an ultrasonic sensor, which emitted sound waves to gauge distances and detect the surroundings effectively. The culmination of this project resulted in a notable achievement, as the robot secured a commendable third place in the Shaastrotsav Sumo Bot competition."
+      img="/blog/images/sumo.jpg"
+      date="test"
+    />
+  </div>
 </Layout>
