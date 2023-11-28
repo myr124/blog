@@ -22,7 +22,7 @@ const posts = await Astro.glob("../pages/posts/*.md");
     }
   </div>
   <h2>Newest Posts</h2>
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-3 items-stretch">
     {
       posts.slice(1, 4).map((post) => (
         <a href={"/blog/posts/" + post.frontmatter.slug}>
